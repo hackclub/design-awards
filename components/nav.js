@@ -5,8 +5,8 @@ const links = [
   { label: "Home", href: "/" },
   { label: "Awards", href: "/" },
   { label: "Prizes", href: "/" },
+  { label: "Judges", href: "/" },
   { label: "Team", href: "/" },
-  { label: "Website", href: "/" },
 ];
 
 export default function Nav() {
