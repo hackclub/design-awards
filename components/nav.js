@@ -2,11 +2,11 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 const links = [
-  { label: "Home", href: "/" },
-  { label: "Awards", href: "/" },
-  { label: "Prizes", href: "/" },
-  { label: "Judges", href: "/" },
-  { label: "Team", href: "/" },
+  { label: "Home", href: "#" },
+  { label: "Awards", href: "#awards" },
+  { label: "Prizes", href: "#prizes" },
+  { label: "Judges", href: "#judges" },
+  { label: "Team", href: "#team" },
 ];
 
 export default function Nav() {

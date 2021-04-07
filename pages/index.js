@@ -16,7 +16,7 @@ export default function Home() {
       <HeadObject />
       <Nav />
       <main className="mx-12">
-        <section className="landing">
+        <section id="home" className="landing">
           <div className="font-ibm text-white font-bold text-7xl leading-tight">
             <h1>
               Hack
@@ -27,7 +27,7 @@ export default function Home() {
             </h1>
           </div>
         </section>
-        <section className="mt-24">
+        <section id="awards" className="mt-24">
           <h2 className="font-ibm font-bold text-4xl text-white pb-12">
             Awards
           </h2>
@@ -40,7 +40,7 @@ export default function Home() {
             <Award award="Best Nonprofit Website" />
           </div>
         </section>
-        <section className="mt-24">
+        <section id="prizes" className="mt-24">
           <h2 className="font-ibm font-bold text-4xl text-white pb-12">
             Prizes
           </h2>
@@ -63,7 +63,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="mt-24">
+        <section id="judges" className="mt-24">
           <h2 className="font-ibm font-bold text-4xl text-white pb-12">
             Judges
           </h2>
@@ -106,7 +106,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="mt-24">
+        <section id="team" className="mt-24">
           <h2 className="font-ibm font-bold text-4xl text-white pb-12">Team</h2>
           <div className="grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 grid-rows-6 grid-cols-1 gap-4">
             <Team
