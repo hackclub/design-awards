@@ -1,2 +1,2 @@
 # Hack Club Design Awards
-Coming soon in summer 2021.
+Coming Soon in Summer 2021.
