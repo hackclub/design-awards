@@ -21,7 +21,7 @@ export default function Nav() {
             <li className="self-center" key={`${href}${label}`}>
               <Link href={href}>
                 <a
-                  className={`font-inter px-4 py-2 rounded hover:text-gray-400`}
+                  className={`font-inter text-xl px-4 py-2 rounded hover:text-gray-400`}
                 >
                   {label}
                 </a>
