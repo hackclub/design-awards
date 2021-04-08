@@ -11,17 +11,17 @@ const links = [
 
 export default function Nav() {
   useEffect(() => {
-    console.log("Ella was here...");
+    console.log("Join the Hack Club Slack https://hackclub.com/slack");
   });
   return (
-    <nav className="text-white">
+    <nav className="text-white relative z-50">
       <ul className="md:flex flex-wrap items-start p-8 mt-6 sm:mt-0 hidden">
         <ul className={`mx-auto sm:mx-0 flex flex-row space-x-5`}>
           {links.map(({ href, label }) => (
             <li className="self-center" key={`${href}${label}`}>
               <Link href={href}>
                 <a
-                  className={`font-inter px-4 py-2 rounded hover:bg-black hover:bg-opacity-10`}
+                  className={`font-inter px-4 py-2 rounded hover:text-gray-400`}
                 >
                   {label}
                 </a>
