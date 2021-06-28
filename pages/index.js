@@ -20,7 +20,7 @@ export default function Home() {
       <img
         src="https://cloud-9d7jc22va-hack-club-bot.vercel.app/2doodle-7_2.png"
         alt="3D worm-like squiggly doodle"
-        className="hidden md:absolute md:flex md:absolute md:-top-10 md:h-96 md:left-48 z-0"
+        className="hidden md:absolute md:flex md:-top-10 md:h-96 md:left-48 z-0"
       />
       <main className="mx-12 pt-10 md:pt-0">
         <section id="home" className="relative z-50">
@@ -96,7 +96,7 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-flow-col md:grid-cols-2 grid-cols-1 gap-14">
             <Team
-              src="https://source.unsplash.com/random/200x200"
+              src="https://github.com/hackclub/dinosaurs/raw/master/smart_dinosaur_docs.png"
               name="Prophet Orpheus"
               role="Hack Club Dino."
               pronouns="she/her"
