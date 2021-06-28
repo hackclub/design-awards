@@ -5,6 +5,8 @@ import Footer from "../components/footer";
 import Award from "../components/award";
 import Team from "../components/team";
 import Prize from "../components/prize";
+import { FaSlack } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -92,89 +94,23 @@ export default function Home() {
           <h2 className="font-ibm font-bold text-4xl text-white pb-12">
             Judges
           </h2>
-          <div className="grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 grid-rows-6 grid-cols-1 gap-14">
+          <div className="grid md:grid-flow-col md:grid-cols-2 grid-cols-1 gap-14">
             <Team
               src="https://source.unsplash.com/random/200x200"
-              name="Zach Latta"
-              role="Founder of Hack Club."
-              pronouns="he/him"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Zach Latta"
-              role="Founder of Hack Club."
-              pronouns="he/him"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Zach Latta"
-              role="Founder of Hack Club."
-              pronouns="he/him"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Zach Latta"
-              role="Founder of Hack Club."
-              pronouns="he/him"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Zach Latta"
-              role="Founder of Hack Club."
-              pronouns="he/him"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Zach Latta"
-              role="Founder of Hack Club."
-              pronouns="he/him"
+              name="Prophet Orpheus"
+              role="Hack Club Dino."
+              pronouns="she/her"
             />
           </div>
         </section>
 
-        <section id="team" className="mt-24 relative z-50">
-          <h2 className="font-ibm font-bold text-4xl text-white pb-12">Team</h2>
-          <div className="grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 grid-rows-6 grid-cols-1 gap-14">
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Prophet Orpheus"
-              role="Hack Club Dino."
-              pronouns="she/her"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Prophet Orpheus"
-              role="Hack Club Dino."
-              pronouns="she/her"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Prophet Orpheus"
-              role="Hack Club Dino."
-              pronouns="she/her"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Prophet Orpheus"
-              role="Hack Club Dino."
-              pronouns="she/her"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Prophet Orpheus"
-              role="Hack Club Dino."
-              pronouns="she/her"
-            />
-            <Team
-              src="https://source.unsplash.com/random/200x200"
-              name="Prophet Orpheus"
-              role="Hack Club Dino."
-              pronouns="she/her"
-            />
-          </div>
-        </section>
-        <section className="mt-8">
-          {/**join the hack club slack button */}
+        <section className="mt-8 flex justify-center">
+          <Link href="https://hackclub.com/slack">
+            <button className="flex items-center space-x-2 font-dm text-lg bg-red-500 rounded-full px-4 py-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
+              <FaSlack size={25} />
+              <a>Join the Slack</a>
+            </button>
+          </Link>
         </section>
       </main>
       <Footer />
