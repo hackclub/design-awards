@@ -33,6 +33,11 @@ export default function Home() {
               Awards
             </h1>
           </div>
+          <a href="https://forms.formium.io/f/61195e9be741b60001c70586">
+            <button className="rounded-xl px-3 py-2 bg-red-500 mt-4 ransition duration-500 ease-in-out transform hover:scale-110">
+              Submit a website &rarr;
+            </button>
+          </a>
         </section>
         <img
           src="https://cloud-9d7jc22va-hack-club-bot.vercel.app/3doodle-6_2.png"
