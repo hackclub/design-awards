@@ -48,13 +48,11 @@ export default function Home() {
           <h2 className="font-ibm font-bold text-4xl text-white pb-12">
             Awards
           </h2>
-          <div className="grid md:grid-flow-col md:grid-cols-3 md:grid-rows-2 grid-rows-3 grid-cols-2 gap-4">
+          <div className="grid md:grid-flow-col md:grid-cols-3  gap-4">
             <Award award="Best Overall" />
-            <Award award="Best Animation" />
-            <Award award="Best Portfolio" />
-            <Award award="Best 404 Page" />
-            <Award award="Best Hackathon Website" />
-            <Award award="Best Nonprofit Website" />
+            <Award award="Personal Website" />
+            <Award award="Client Website" />
+            <Award award="Web Project" />
           </div>
         </section>
         <section id="prizes" className="mt-24 relative z-50">
@@ -63,24 +61,20 @@ export default function Home() {
           </h2>
           <div>
             <Prize
-              prize="Sketch License"
-              image="https://cloud-awro5n7df-hack-club-bot.vercel.app/0saly-28_1_.png"
-            />
-            <Prize
-              prize="Private Emoji"
-              image="https://cloud-lbhrtik23-hack-club-bot.vercel.app/0doodle-2_1.png"
-            />
-            <Prize
-              prize="Stickers"
-              image="https://cloud-awro5n7df-hack-club-bot.vercel.app/0saly-28_1_.png"
-            />
-            <Prize
               prize="$20 Gift Card"
               image="https://cloud-awro5n7df-hack-club-bot.vercel.app/0saly-28_1_.png"
             />
+            <Prize
+              prize="Figma Pin"
+              image="https://cloud-awro5n7df-hack-club-bot.vercel.app/0saly-28_1_.png"
+            />
+            <Prize
+              prize="Stickers for everyone!"
+              image="https://cloud-lbhrtik23-hack-club-bot.vercel.app/0doodle-2_1.png"
+            />
           </div>
         </section>
-        <img
+        {/* <img
           src="https://cloud-9d7jc22va-hack-club-bot.vercel.app/0saly-25.png"
           alt="3D model of a hand drawing"
           className="hidden md:absolute md:flex md:right-16 lg:right-72 md:-bottom-96 md:w-96 lg:w-min"
@@ -89,7 +83,7 @@ export default function Home() {
           src="https://cloud-9d7jc22va-hack-club-bot.vercel.app/1doodle-4_1.png"
           alt="3d coil doodle"
           className="absolute transform rotate-90 h-48 left-6 -bottom-full"
-        />
+        /> */}
         <section id="judges" className="mt-24 relative z-50">
           <h2 className="font-ibm font-bold text-4xl text-white pb-12">
             Judges
