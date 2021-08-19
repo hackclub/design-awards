@@ -1,2 +1,2 @@
 # Hack Club Design Awards
-Coming Soon in Summer 2021.
+A web design event for Hack Clubbers.
