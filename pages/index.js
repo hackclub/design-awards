@@ -15,8 +15,19 @@ export default function Home() {
         image="https://github.com/hackclub.png"
         color="#e5e5e5"
       />
+      <style>
+        {`
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        `}
+      </style>
       <main>
         <Page>
+          <Spacer y={4} />
           <Page.Header>
             <Text h1>Hack Club Design Awards</Text>
             <Text p>A 2021 Hack Club summer online web design contest.</Text>
