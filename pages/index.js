@@ -21,15 +21,14 @@ export default function Home() {
             <Text p>A 2021 Hack Club summer online web design contest.</Text>
           </Page.Header>
           <Page.Content>
-            <Grid.Container gap={2} justify="center" height="100px">
-              <Grid xs={6}>
-                {projects.map((p) => (
-                  <>
-                    <Card key={p.id} />
-                    <Text p>{p.github}</Text>
-                  </>
-                ))}
-              </Grid>
+            <Grid.Container gap={2} justify="center">
+              {projects.map((p) => (
+                <Grid xs={12} md={6}>
+                  <Card shadow width="100%" height="50px">
+                    <Text p>{p.website}</Text>
+                  </Card>
+                </Grid>
+              ))}
             </Grid.Container>
           </Page.Content>
           <Page.Footer>
