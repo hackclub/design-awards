@@ -1,14 +1,10 @@
-import { Text } from "@geist-ui/react";
-import Link from "next/link";
-import Icon from "supercons";
+import { Text, Link } from "@geist-ui/react";
 
 export default function Footer() {
   return (
     <div>
-      <Text p>Hack Club Yeah!</Text>
-      <Icon glyph="github" size={32} />
       <Text p>
-        A 2021 summer event by Hack Club. This website is{" "}
+        A 2021 summer online event by Hack Club. This website is{" "}
         <Link href="https://github.com/hackclub/design-awards">
           open source
         </Link>

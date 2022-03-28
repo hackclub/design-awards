@@ -26,7 +26,7 @@ export default function Home() {
               {projects.map((p) => (
                 <Grid xs={12} md={6}>
                   <Link href={`/${p.id}`}>
-                    <Card shadow width="100%" height="50px">
+                    <Card shadow width="100%">
                       <Text p>{p.website}</Text>
                     </Card>
                   </Link>

@@ -48,18 +48,24 @@ export default function ShowPage({ project, prev, next }) {
             };
             min-height: 100vh;
           }
+          .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0.5rem;
+          }
         `}
       </style>
       {/* <Pagination2 prev={prev} next={next} /> */}
       <Spacer y={1} />
-      <div style={{ margin: "0 auto" }}>
-        <Text span>
-          Built by{" "}
-          <User
-            src={`https://github.com/${project.github}.png`}
-            name={`@${project.github}`}
-          />
-        </Text>
+      <div className="title">
+        <User
+          src={`https://github.com/${project.github}.png`}
+          name={`@${project.github}`}
+        />
+        <Spacer y={6} />
       </div>
       <Browser url={project.website} />
     </>
