@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Meta from "@hackclub/meta";
-import { Spacer, Text, Grid, Card, Page } from "@geist-ui/react";
+import { Spacer, Text, Grid, Card, Page, Link } from "@geist-ui/react";
+
 import projects from "../sites.json";
 import Footer from "../components/Footer";
 
@@ -24,9 +25,11 @@ export default function Home() {
             <Grid.Container gap={2} justify="center">
               {projects.map((p) => (
                 <Grid xs={12} md={6}>
-                  <Card shadow width="100%" height="50px">
-                    <Text p>{p.website}</Text>
-                  </Card>
+                  <Link href={`/${p.id}`}>
+                    <Card shadow width="100%" height="50px">
+                      <Text p>{p.website}</Text>
+                    </Card>
+                  </Link>
                 </Grid>
               ))}
             </Grid.Container>

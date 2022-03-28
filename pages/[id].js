@@ -1,17 +1,67 @@
 import Head from "next/head";
-import { Spacer } from "@geist-ui/react";
+import { Spacer, Text, Row, Link, User } from "@geist-ui/react";
 import projects from "../sites.json";
 import Meta from "@hackclub/meta";
 import Browser from "../components/Browser";
+
+const colors = [
+  "#ec3750",
+  "#ff8c37",
+  "#f1c40f",
+  "#33d6a6",
+  "#5bc0de",
+  "#338eda",
+  "#a633d6",
+];
+
+// function Pagination2({ prev, next }) {
+//   return (
+//     <Row>
+//       {prev && (
+//         <Link href={`/${prev}`}>
+//           &larr;
+//           <Spacer x={0.25} />
+//           Prev
+//         </Link>
+//       )}
+//       {prev && next && <Spacer x={0.75} />}
+//       {next && (
+//         <Link href={`/${next}`}>
+//           &rarr;
+//           <Spacer x={0.25} />
+//           Next
+//         </Link>
+//       )}
+//     </Row>
+//   );
+// }
 
 export default function ShowPage({ project, prev, next }) {
   return (
     <>
       <Meta as={Head} title={project.website} />
-
+      <style>
+        {`
+          body {
+            background-color: ${
+              colors[Math.floor(Math.random() * colors.length)]
+            };
+            min-height: 100vh;
+          }
+        `}
+      </style>
+      {/* <Pagination2 prev={prev} next={next} /> */}
       <Spacer y={1} />
-
-      <Browser url={project.website} next={next} prev={prev} />
+      <div style={{ margin: "0 auto" }}>
+        <Text span>
+          Built by{" "}
+          <User
+            src={`https://github.com/${project.github}.png`}
+            name={`@${project.github}`}
+          />
+        </Text>
+      </div>
+      <Browser url={project.website} />
     </>
   );
 }
